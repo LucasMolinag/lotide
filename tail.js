@@ -7,13 +7,13 @@ const assertEqual = function(actual, expected) {
   }
 }
 
-const tail = function(arr) {
+const tail = function(arr) { // not working - arr.slice is not a function
   if (arr.length === 0) {
-    return []; // Return an empty array if the input array is empty
+    return [];
   }
-  return arr.slice(1); // Return a new array with all items after the first one
+  return arr.slice(1);
 }
 
-assertEqual(tail([1, 2, 3] === [1, 2, 3])) // => false
-assertEqual(tail([1, 2, 3] == [1, 2, 3])) // => false
+assertEqual(tail([1, 2, 3]), [1, 2, 3]) // => false
+assertEqual(tail([1, 2, 3]), [1, 2, 3]) // => false
 
