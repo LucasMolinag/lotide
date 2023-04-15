@@ -12,3 +12,5 @@ const countLetters = function(sentence) {
 }
   return counts;
 };
+
+module.exports = countLetters;

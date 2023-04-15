@@ -7,3 +7,5 @@ const without = function(source, itemsToRemove) {
   }
   return resultArray;
 }
+
+module.exports = without;

@@ -8,10 +8,10 @@ const findKeyByValue = function(theme, showName) {
   return('No Matches')
 }
 
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
+//const bestTVShowsByGenre = { 
+//  sci_fi: "The Expanse",
+//  comedy: "Brooklyn Nine-Nine",
+//  drama:  "The Wire"
+//};
 
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"))
+module.exports = findKeyByValue;
