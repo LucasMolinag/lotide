@@ -1,8 +1,8 @@
-const tail = function(arr) {
-  if (arr.length === 0) {
+const tail = function(array) {
+  if (array.length === 0) {
     return [];
   }
-  return arr.slice(1);
-}
+  return array.slice(1);
+};
 
 module.exports = tail;

@@ -1,5 +1,5 @@
 const flatten = function(array) {
-  let flattenedArray = []
+  let flattenedArray = [];
   for (let item of array) {
     if (Array.isArray(item)) {
       flattenedArray.push(...item);
@@ -8,6 +8,6 @@ const flatten = function(array) {
     }
   }
   return flattenedArray;
-}
+};
 
 module.exports = flatten;
