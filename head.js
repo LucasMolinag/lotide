@@ -1,4 +1,8 @@
-const head = function(array) {
+/**
+ * @param {array} array - Any array
+ * */
+
+const head = function(array) {        //Returns the first element of an array
   if (array.length === 0) {
     return undefined;
   }

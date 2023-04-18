@@ -1,10 +1,14 @@
-const middle = function(array) {
-  const middleIndex = Math.floor(array.length / 2);
+/**
+ * @param {array} array - Any array
+ * */
 
-  if (array.length === 1 || array.length === 2) {
+const middle = function(array) {
+  const middleIndex = Math.floor(array.length / 2);             //This equation finds the middle point of the array and rounds it
+
+  if (array.length === 1 || array.length === 2) {               //Condition for arrays that are too short
     return [];
-  } else if (array.length % 2 === 0) {
-    return [array[middleIndex - 1], array[middleIndex]];
+  } else if (array.length % 2 === 0) {                          //Condition for even arrays
+    return [array[middleIndex - 1], array[middleIndex]];        //This ensures we return the two middle numbers when the array is even
   } else {
     return [array[middleIndex]];
   }
