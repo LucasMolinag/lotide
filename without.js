@@ -4,7 +4,7 @@
  * */
 
 const without = function(source, itemsToRemove) {             //Creates a new array without the "itemsToRemove"
-  let resultArray = [];                         
+  let resultArray = [];
   for (let item of source) {
     if (!itemsToRemove.includes(item)) {                      //Conditional that pushes values not included in "itemsToRemove" to new array
       resultArray.push(item);

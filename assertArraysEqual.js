@@ -7,7 +7,7 @@ const eqArrays = require(`./eqArrays`);                              //Use eqArr
 
 
 const assertArraysEqual = function(actual, expected) {               //This function takes in both arrays, runs them throguh eqArrays to compare and logs the result according to if it failed or passed
-  if (eqArrays(actual, expected)) {                               
+  if (eqArrays(actual, expected)) {
     console.log(`Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`Assertion Failed: ${actual} !== ${expected}`);
